@@ -1,18 +1,18 @@
 pipeline {
      agent any 
      stages {
-          stage('Hello world') {
+          stage('-----Hello world-----') {
               steps {
                  bat "hello_world.py"
               }
           }
-          stage('calculus of value of cylinder ') {
+          stage('-----calculus of value of cylinder------') {
                 steps {
                    bat "python Testing_argum.py -r 2 -H 3"
                    bat "echo all right" 
                 }
           }
-          stage('All right?') {
+          stage('-----All right?-----') {
               steps {
                  bat "echo also all right" 
               }
