@@ -8,7 +8,7 @@ pipeline {
           }
           stage('Test') { 
                 steps {
-                   bat "python test_jenkins/Testing_argum.py -r 2 -H 3"
+                   bat "python Testing_argum.py -r 2 -H 3"
                    bat "echo all right" 
                 }
           }
