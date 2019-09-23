@@ -16,8 +16,12 @@ pipeline {
               steps {
                  bat "git add ."
                  bat "git commit -m '1' "
-                 bat "git push origin HEAD:master --force"
                  bat "echo also all right" 
+              }
+          }
+          stage('pushing') {
+              steps {
+                 bat "git push origin master"
               }
           }
       }
