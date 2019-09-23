@@ -14,6 +14,9 @@ pipeline {
           }
           stage('-----All right?-----') {
               steps {
+                 bat "git add ."
+                 bat "git commit -m '1' "
+                 bat "git push"
                  bat "echo also all right" 
               }
           }
