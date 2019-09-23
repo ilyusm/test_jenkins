@@ -16,7 +16,7 @@ pipeline {
               steps {
                  bat "git add ."
                  bat "git commit -m '1' "
-                 bat "git push origin HEAD: master"
+                 bat "git push origin HEAD:master"
                  bat "echo also all right" 
               }
           }
