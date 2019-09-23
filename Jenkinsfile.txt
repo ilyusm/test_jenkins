@@ -3,8 +3,6 @@ pipeline {
      stages {
           stage('Clon repo') { 
               steps {
-                 bat "rmdir test_jenkins /s /q "
-                 bat "git clone https://github.com/ilyusm/test_jenkins.git" 
                  bat "python test_jenkins/hello_world.py"
               }
           }
