@@ -1,0 +1,23 @@
+pipeline {
+     agent any 
+     stages {
+          stage('Clon repo') { 
+              steps {
+                 bat "rmdir test_jenkins /s /q "
+                 bat "git clone https://github.com/ilyusm/test_jenkins.git" 
+                 bat "python test_jenkins/hello_world.py"
+              }
+          }
+          stage('Test') { 
+                steps {
+                   bat "python test_jenkins/Testing_argum.py -r 2 -H 3"
+                   bat "echo all right" 
+                }
+          }
+          stage('Deploy') { 
+              steps {
+                 bat "echo also all right" 
+              }
+          }
+      }
+}
