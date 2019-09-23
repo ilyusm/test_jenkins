@@ -3,7 +3,7 @@ pipeline {
      stages {
           stage('Clon repo') { 
               steps {
-                 bat "python test_jenkins/hello_world.py"
+                 bat "hello_world.py"
               }
           }
           stage('Test') { 
