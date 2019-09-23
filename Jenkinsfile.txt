@@ -1,18 +1,18 @@
 pipeline {
      agent any 
      stages {
-          stage('Clon repo') { 
+          stage('Hello world') {
               steps {
                  bat "hello_world.py"
               }
           }
-          stage('Test') { 
+          stage('calculus of value of cylinder ') {
                 steps {
                    bat "python Testing_argum.py -r 2 -H 3"
                    bat "echo all right" 
                 }
           }
-          stage('Deploy') { 
+          stage('All right?') {
               steps {
                  bat "echo also all right" 
               }
